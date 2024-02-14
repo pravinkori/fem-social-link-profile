@@ -5,7 +5,7 @@ import "./css/App.css";
 function App() {
    return (
       <>
-         <Card />
+         <Card userName="Jessica Randall" location="London, United Kingdom" />
          <Credits />
       </>
    );
