@@ -13,16 +13,16 @@ function Card() {
 
             <div className="card__location">London, United Kingdom</div>
 
-            <p>{"Front-end developer and avid reader."}</p>
+            <p className="card__user-bio">
+               {"Front-end developer and avid reader."}
+            </p>
 
             <div className="card__socials">
-               <ul>
-                  <li>GitHub</li>
-                  <li>Frontend Mentor</li>
-                  <li>LinkedIn</li>
-                  <li>Twitter</li>
-                  <li>Instagram</li>
-               </ul>
+               <button>GitHub</button>
+               <button>Frontend Mentor</button>
+               <button>LinkedIn</button>
+               <button>Twitter</button>
+               <button>Instagram</button>
             </div>
          </div>
       </article>
