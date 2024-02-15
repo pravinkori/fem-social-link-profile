@@ -23,11 +23,15 @@ function SocialButtons() {
 function Card({ userName, location }) {
    return (
       <article className="card">
-         <picture className="card__user-image">
+         <picture className="card__user-image" role="img">
             <img src={avatar} alt="user profile picture" />
          </picture>
 
-         <div className="card__content">
+         <div
+            className="card__content"
+            role="region"
+            aria-labelledby="cardTitle"
+         >
             <h1 className="card__title">{userName}</h1>
 
             <div className="card__location">{location}</div>
