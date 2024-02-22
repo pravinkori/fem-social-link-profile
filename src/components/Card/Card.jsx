@@ -1,4 +1,3 @@
-import "/src/css/App.css";
 import styles from "./Card.module.css";
 import avatar from "/src/assets/images/avatar-jessica.jpeg";
 
