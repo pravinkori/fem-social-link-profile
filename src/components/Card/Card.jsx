@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
-import "../css/App.css";
-import avatar from "../assets/images/avatar-jessica.jpeg";
+import "/src/css/App.css";
+import styles from "./Card.module.css";
+import avatar from "/src/assets/images/avatar-jessica.jpeg";
 
 function SocialButtons() {
    const socials = [
@@ -12,7 +12,8 @@ function SocialButtons() {
    ];
 
    return (
-      <div className="card__socials">
+      <div className={styles.card__socials}>
+         {" "}
          {socials.map((social) => (
             <button key={social}>{social}</button>
          ))}
@@ -22,24 +23,21 @@ function SocialButtons() {
 
 function Card({ userName, location }) {
    return (
-      <article className="card">
-         <picture className="card__user-image" role="img">
+      <article className={styles.card}>
+         <picture className={styles["card__user-image"]} role="img">
             <img src={avatar} alt="user profile picture" />
          </picture>
 
          <div
-            className="card__content"
+            className={styles.card__content}
             role="region"
             aria-labelledby="cardTitle"
          >
-            <h1 className="card__title">{userName}</h1>
-
-            <div className="card__location">{location}</div>
-
-            <p className="card__user-bio">
+            <h1 className={styles.card__title}>{userName}</h1>
+            <div className={styles.card__location}>{location}</div>
+            <p className={styles["card__user-bio"]}>
                {"Front-end developer and avid reader."}
             </p>
-
             <SocialButtons />
          </div>
       </article>
